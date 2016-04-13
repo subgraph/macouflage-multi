@@ -1,12 +1,11 @@
 package main
 
 import (
-	"strings"
 	"fmt"
-	"log"
 	lmf "github.com/subgraph/libmacouflage"
+	"log"
+	"strings"
 )
-
 
 func getCurrentMacInfo(name string) (result string, err error) {
 	currentMacInfo, err := getMacInfo(name, "CurrentMAC")
@@ -34,6 +33,7 @@ func getCurrentMacInfo(name string) (result string, err error) {
 		result = fmt.Sprintf("%sPermanent MAC: %s (%s)",
 			currentMacInfo, permanentMac, permanentMacVendor.Vendor)
 	}
+	err = nil
 	return
 }
 
