@@ -8,7 +8,7 @@ Homepage: https://www.github.com/subgraph/macouflage-multi/
 Vcs-Git: https://github.com/subgraph/macouflage-multi.git
 
 Package: macouflage-multi
-Architecture: amd64
+Architecture: any
 Depends: ${misc:Depends}, ${misc:Built-Using}, ${shlibs:Depends}, golang, adduser, udev
 Description: MAC address anonymization toolkit for Subgraph OS
  macouflage is a library and a set of tools for anonymizing MAC addresses
